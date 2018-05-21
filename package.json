@@ -15,7 +15,7 @@
   "license": "BSD",
   "dependencies": {
     "collections": "^3.0.0",
-    "node-zip": "1.x"
+    "node-zip": "https://github.com/antoniodalessio/node-zip.git"
   },
   "devDependencies": {
     "mocha": "",
