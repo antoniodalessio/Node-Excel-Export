@@ -4,7 +4,7 @@ var sheetFront = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><x:work
 var sheetBack =' <x:pageMargins left="0.75" right="0.75" top="0.75" bottom="0.5" header="0.5" footer="0.75" />'
 		+ ' <x:headerFooter /></x:worksheet>';
     
-var fs = require('fs');
+var fs = require('react-native-fs');
 
 function Sheet(config, xlsx, shareStrings, convertedShareStrings){
   this.config = config;
