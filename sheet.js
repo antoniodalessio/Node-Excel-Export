@@ -67,7 +67,7 @@ Sheet.prototype.generate = function(){
 				cellData = cols[j].beforeCellWrite(r, cellData, e);
 				styleIndex = e.styleIndex || styleIndex;
 				cellType = e.cellType;
-				delete e;
+				e = null;
 			}
 			switch (cellType) {
 			case 'number':
