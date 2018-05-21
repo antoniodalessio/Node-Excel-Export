@@ -1,5 +1,5 @@
 require('node-zip');
-var fs = require('fs'),
+var fs = require('react-native-fs'),
 Sheet = require('./sheet'),
 SortedMap = require('collections/sorted-map');
 
@@ -116,8 +116,8 @@ exports.execute = function(config) {
 		base64: false,
 		compression: "DEFLATE"
 	});
-	delete shareStrings;
-	delete xlsx;
+	shareStrings = null;
+	xlsx = null;
 	return results;
 }
 
